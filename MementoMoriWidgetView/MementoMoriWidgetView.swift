@@ -44,8 +44,7 @@ struct MementoMoriWidgetViewEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        TimeFormatsView()
-      //  Text(entry.date, style: .time)
+        DaysRemainingWidgetView()
     }
 }
 
@@ -59,12 +58,13 @@ struct MementoMoriWidgetView: Widget {
         }
         .configurationDisplayName("Memento mori details")
         .description("Keep track of life and death.")
+        .supportedFamilies([.systemSmall])
     }
 }
 
 struct MementoMoriWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        TimeFormatsView()
-            .previewContext(WidgetPreviewContext(family: .systemLarge))
+        DaysRemainingWidgetView()
+            .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

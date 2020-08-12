@@ -15,8 +15,8 @@
 		4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC5824DDB792005D3D5E /* ContentView.swift */; };
 		4685FC8424DDB795005D3D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4685FC5924DDB795005D3D5E /* Assets.xcassets */; };
 		4685FC8524DDB795005D3D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4685FC5924DDB795005D3D5E /* Assets.xcassets */; };
-		4685FC9524DDB7FC005D3D5E /* DaysRemaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */; };
-		4685FC9624DDB7FC005D3D5E /* DaysRemaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */; };
+		4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */; };
+		4685FC9624DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */; };
 		4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9724DDB972005D3D5E /* FrontImage.swift */; };
 		4685FC9924DDB972005D3D5E /* FrontImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9724DDB972005D3D5E /* FrontImage.swift */; };
 		4685FCC224DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
@@ -34,7 +34,7 @@
 		46BF94EA24E46D0A0048E44E /* MementoMoriWidgetViewExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46BF94DC24E46D080048E44E /* MementoMoriWidgetViewExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		46BF94EE24E46D200048E44E /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
 		46BF94EF24E46D200048E44E /* FrontImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9724DDB972005D3D5E /* FrontImage.swift */; };
-		46BF94F024E46D200048E44E /* DaysRemaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */; };
+		46BF94F024E46D200048E44E /* DaysRemainingVidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */; };
 		46BF94F124E46D200048E44E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC5824DDB792005D3D5E /* ContentView.swift */; };
 		46BF94F224E46D200048E44E /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
 		46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
@@ -93,7 +93,7 @@
 		4685FC7924DDB795005D3D5E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4685FC7D24DDB795005D3D5E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4685FC7F24DDB795005D3D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysRemaining.swift; sourceTree = "<group>"; };
+		4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysRemainingVidgetView.swift; sourceTree = "<group>"; };
 		4685FC9724DDB972005D3D5E /* FrontImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontImage.swift; sourceTree = "<group>"; };
 		4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatsView.swift; sourceTree = "<group>"; };
 		4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatsModel.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				4685FC5824DDB792005D3D5E /* ContentView.swift */,
 				46A3D5FD24E03CD400CCEF71 /* Havamal.swift */,
 				4685FC9724DDB972005D3D5E /* FrontImage.swift */,
-				4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */,
+				4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */,
 				4685FC5924DDB795005D3D5E /* Assets.xcassets */,
 				4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */,
 				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
@@ -438,7 +438,7 @@
 				4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
-				4685FC9524DDB7FC005D3D5E /* DaysRemaining.swift in Sources */,
+				4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
 				4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,7 +452,7 @@
 				4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */,
 				4685FC8124DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
-				4685FC9624DDB7FC005D3D5E /* DaysRemaining.swift in Sources */,
+				4685FC9624DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
 				4685FC9924DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,7 +481,7 @@
 				46BF94E624E46D0A0048E44E /* MementoMoriWidgetView.intentdefinition in Sources */,
 				46BF94EE24E46D200048E44E /* Havamal.swift in Sources */,
 				46BF94F124E46D200048E44E /* ContentView.swift in Sources */,
-				46BF94F024E46D200048E44E /* DaysRemaining.swift in Sources */,
+				46BF94F024E46D200048E44E /* DaysRemainingVidgetView.swift in Sources */,
 				46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */,
 				46BF94E124E46D080048E44E /* MementoMoriWidgetView.swift in Sources */,
 				46BF94EF24E46D200048E44E /* FrontImage.swift in Sources */,

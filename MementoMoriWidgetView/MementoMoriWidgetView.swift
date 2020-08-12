@@ -44,7 +44,8 @@ struct MementoMoriWidgetViewEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        Text(entry.date, style: .time)
+        TimeFormatsView()
+      //  Text(entry.date, style: .time)
     }
 }
 
@@ -56,8 +57,8 @@ struct MementoMoriWidgetView: Widget {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
             MementoMoriWidgetViewEntryView(entry: entry)
         }
-        .configurationDisplayName("My Widget")
-        .description("This is an example widget.")
+        .configurationDisplayName("Memento mori details")
+        .description("Keep track of life and death.")
     }
 }
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,16 @@
 		4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC5824DDB792005D3D5E /* ContentView.swift */; };
 		4685FC8424DDB795005D3D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4685FC5924DDB795005D3D5E /* Assets.xcassets */; };
 		4685FC8524DDB795005D3D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4685FC5924DDB795005D3D5E /* Assets.xcassets */; };
+		4685FC9524DDB7FC005D3D5E /* DaysRemaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */; };
+		4685FC9624DDB7FC005D3D5E /* DaysRemaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */; };
+		4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9724DDB972005D3D5E /* FrontImage.swift */; };
+		4685FC9924DDB972005D3D5E /* FrontImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9724DDB972005D3D5E /* FrontImage.swift */; };
+		4685FCC224DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
+		4685FCC324DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
+		4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
+		4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
+		46A3D5FE24E03CD400CCEF71 /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
+		46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +44,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		46A3D61924E44E6C00CCEF71 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		4685FC5724DDB792005D3D5E /* Memento_moriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento_moriApp.swift; sourceTree = "<group>"; };
 		4685FC5824DDB792005D3D5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +72,13 @@
 		4685FC7924DDB795005D3D5E /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4685FC7D24DDB795005D3D5E /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		4685FC7F24DDB795005D3D5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysRemaining.swift; sourceTree = "<group>"; };
+		4685FC9724DDB972005D3D5E /* FrontImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontImage.swift; sourceTree = "<group>"; };
+		4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatsView.swift; sourceTree = "<group>"; };
+		4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatsModel.swift; sourceTree = "<group>"; };
+		46A3D5FD24E03CD400CCEF71 /* Havamal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Havamal.swift; sourceTree = "<group>"; };
+		46A3D60624E44E6A00CCEF71 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		46A3D60824E44E6A00CCEF71 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +121,7 @@
 				4685FC6724DDB795005D3D5E /* macOS */,
 				4685FC7124DDB795005D3D5E /* Tests iOS */,
 				4685FC7C24DDB795005D3D5E /* Tests macOS */,
+				46A3D60524E44E6A00CCEF71 /* Frameworks */,
 				4685FC5F24DDB795005D3D5E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,7 +131,12 @@
 			children = (
 				4685FC5724DDB792005D3D5E /* Memento_moriApp.swift */,
 				4685FC5824DDB792005D3D5E /* ContentView.swift */,
+				46A3D5FD24E03CD400CCEF71 /* Havamal.swift */,
+				4685FC9724DDB972005D3D5E /* FrontImage.swift */,
+				4685FC9424DDB7FC005D3D5E /* DaysRemaining.swift */,
 				4685FC5924DDB795005D3D5E /* Assets.xcassets */,
+				4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */,
+				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -151,6 +187,15 @@
 			path = "Tests macOS";
 			sourceTree = "<group>";
 		};
+		46A3D60524E44E6A00CCEF71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46A3D60624E44E6A00CCEF71 /* WidgetKit.framework */,
+				46A3D60824E44E6A00CCEF71 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -161,6 +206,7 @@
 				4685FC5A24DDB795005D3D5E /* Sources */,
 				4685FC5B24DDB795005D3D5E /* Frameworks */,
 				4685FC5C24DDB795005D3D5E /* Resources */,
+				46A3D61924E44E6C00CCEF71 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
@@ -250,7 +296,7 @@
 				};
 			};
 			buildConfigurationList = 4685FC5524DDB792005D3D5E /* Build configuration list for PBXProject "Memento mori" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -308,8 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A3D5FE24E03CD400CCEF71 /* Havamal.swift in Sources */,
+				4685FCC224DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
+				4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
+				4685FC9524DDB7FC005D3D5E /* DaysRemaining.swift in Sources */,
+				4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,8 +368,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */,
+				4685FCC324DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
+				4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */,
 				4685FC8124DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
+				4685FC9624DDB7FC005D3D5E /* DaysRemaining.swift in Sources */,
+				4685FC9924DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,8 +524,10 @@
 		4685FC8924DDB795005D3D5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAM97V3SZ2;
 				ENABLE_PREVIEWS = YES;
@@ -479,8 +537,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Memento-mori";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Mementomori";
 				PRODUCT_NAME = "Memento mori";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -490,8 +549,10 @@
 		4685FC8A24DDB795005D3D5E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SAM97V3SZ2;
 				ENABLE_PREVIEWS = YES;
@@ -501,8 +562,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Memento-mori";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Mementomori";
 				PRODUCT_NAME = "Memento mori";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

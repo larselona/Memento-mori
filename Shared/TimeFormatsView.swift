@@ -18,27 +18,29 @@ struct TimeFormatsView: View {
                     Text("Total number of days")
                 }
                 Text("\(totalDaysYears!)y \(totalDaysMonths!)m \(totalDaysDays!)d")
-                    .font(.largeTitle)
+                    .font(.title)
                 Text("(\(totalDays!) days)")
             }
             Spacer()
             VStack {
                 VStack {
                     Image(systemName: "heart.slash")
+                        .foregroundColor(.red)
                     Text("Lived number of days")
                 }
                 Text("\(livedDaysYears!)y \(livedDaysMonths!)m \(livedDaysDays!)d")
-                    .font(.largeTitle)
+                    .font(.title)
                 Text("(\(livedDays!) days)")
             }
             Spacer()
             VStack {
                 VStack {
                     Image(systemName: "bolt.heart")
+                        .foregroundColor(.green)
                     Text("Remaining number of days")
                 }
                 Text("\(remainingDaysYears!)y \(remainingDaysMonths!)m \(remainingDaysDays!)d")
-                    .font(.largeTitle)
+                    .font(.title)
                 Text("(\(remainingDays!) days)")
                  
                

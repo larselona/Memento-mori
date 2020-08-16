@@ -10,15 +10,19 @@ import SwiftUI
 struct DaysRemainingWidgetView: View {
     var body: some View {
         VStack {
+            
             Spacer()
+            
             VStack {
                 HStack {
                     Text("☥")
                         .font(.title2)
+                    
                     Text("\(totalDaysYears!)y \(totalDaysMonths!)m \(totalDaysDays!)d")
-                        .font(.body)
+                        
                     
                 }
+                
                 Text("(\(totalDays!) days)")
             }
             Spacer()
@@ -26,21 +30,25 @@ struct DaysRemainingWidgetView: View {
                 HStack {
                     
                     Image(systemName: "heart.slash")
+                        .foregroundColor(.red)
+                    
                     Text("\(livedDaysYears!)y \(livedDaysMonths!)m \(livedDaysDays!)d")
-                        .font(.body)
+                       
                 }
+                
                 Text("(\(livedDays!) days)")
-                    .font(.body)
+                    
             }
             Spacer()
             VStack {
                 HStack {
                     
                     Image(systemName: "bolt.heart")
+                        .foregroundColor(.green)
                     Text("\(remainingDaysYears!)y \(remainingDaysMonths!)m \(remainingDaysDays!)d")
                 }
                 Text("(\(remainingDays!))")
-                    .font(.body)
+                    
             }
             Spacer()
         }

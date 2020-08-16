@@ -38,6 +38,12 @@
 		46BF94F124E46D200048E44E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC5824DDB792005D3D5E /* ContentView.swift */; };
 		46BF94F224E46D200048E44E /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
 		46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
+		46BF94FB24E5EDB70048E44E /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF94FA24E5EDB70048E44E /* UserInputView.swift */; };
+		46F7CA1024E7EBEB008ADD57 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA0F24E7EBEB008ADD57 /* Quotes.json */; };
+		46F7CA1124E7EBEB008ADD57 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA0F24E7EBEB008ADD57 /* Quotes.json */; };
+		46F7CA1724E8A734008ADD57 /* TimeDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA1624E8A734008ADD57 /* TimeDifference.swift */; };
+		46F7CA1824E8A734008ADD57 /* TimeDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA1624E8A734008ADD57 /* TimeDifference.swift */; };
+		46F7CA1924E8AA2C008ADD57 /* TimeDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA1624E8A734008ADD57 /* TimeDifference.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +111,10 @@
 		46BF94E224E46D080048E44E /* MementoMoriWidgetView.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MementoMoriWidgetView.intentdefinition; sourceTree = "<group>"; };
 		46BF94E324E46D0A0048E44E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46BF94E524E46D0A0048E44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BF94F424E4A2C80048E44E /* Time formatted as ymwd.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Time formatted as ymwd.playground"; path = "../../../../../Library/Autosave Information/Time formatted as ymwd.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		46BF94FA24E5EDB70048E44E /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
+		46F7CA0F24E7EBEB008ADD57 /* Quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quotes.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
+		46F7CA1624E8A734008ADD57 /* TimeDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDifference.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,14 +175,18 @@
 		4685FC5624DDB792005D3D5E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				46BF94F424E4A2C80048E44E /* Time formatted as ymwd.playground */,
 				4685FC5724DDB792005D3D5E /* Memento_moriApp.swift */,
 				4685FC5824DDB792005D3D5E /* ContentView.swift */,
 				46A3D5FD24E03CD400CCEF71 /* Havamal.swift */,
 				4685FC9724DDB972005D3D5E /* FrontImage.swift */,
+				46F7CA1624E8A734008ADD57 /* TimeDifference.swift */,
 				4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */,
 				4685FC5924DDB795005D3D5E /* Assets.xcassets */,
 				4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */,
 				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
+				46BF94FA24E5EDB70048E44E /* UserInputView.swift */,
+				46F7CA0F24E7EBEB008ADD57 /* Quotes.json */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -391,6 +405,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F7CA1024E7EBEB008ADD57 /* Quotes.json in Resources */,
 				4685FC8424DDB795005D3D5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +414,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46F7CA1124E7EBEB008ADD57 /* Quotes.json in Resources */,
 				4685FC8524DDB795005D3D5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,11 +449,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A3D5FE24E03CD400CCEF71 /* Havamal.swift in Sources */,
+				46BF94FB24E5EDB70048E44E /* UserInputView.swift in Sources */,
 				4685FCC224DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
 				46BF94E724E46D0A0048E44E /* MementoMoriWidgetView.intentdefinition in Sources */,
 				4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
+				46F7CA1724E8A734008ADD57 /* TimeDifference.swift in Sources */,
 				4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
 				4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
@@ -448,6 +466,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */,
+				46F7CA1824E8A734008ADD57 /* TimeDifference.swift in Sources */,
 				4685FCC324DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
 				4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */,
@@ -483,6 +502,7 @@
 				46BF94F124E46D200048E44E /* ContentView.swift in Sources */,
 				46BF94F024E46D200048E44E /* DaysRemainingVidgetView.swift in Sources */,
 				46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */,
+				46F7CA1924E8AA2C008ADD57 /* TimeDifference.swift in Sources */,
 				46BF94E124E46D080048E44E /* MementoMoriWidgetView.swift in Sources */,
 				46BF94EF24E46D200048E44E /* FrontImage.swift in Sources */,
 			);

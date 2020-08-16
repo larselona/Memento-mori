@@ -22,12 +22,11 @@ struct ContentView: View {
             Havamal()
                 .padding(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
                 
-                
-            
+         
+
         }
         
-      
-    }
+          }
 }
 
 struct ContentView_Previews: PreviewProvider {

@@ -37,6 +37,7 @@ struct TimeFormatsView: View {
                 }
                 Text("\(remainingDays!)")
                     .font(.largeTitle)
+               
             }
             Spacer()
         }

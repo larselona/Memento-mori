@@ -44,6 +44,22 @@
 		46F7CA1724E8A734008ADD57 /* TimeDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA1624E8A734008ADD57 /* TimeDifference.swift */; };
 		46F7CA1824E8A734008ADD57 /* TimeDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA1624E8A734008ADD57 /* TimeDifference.swift */; };
 		46F7CA1924E8AA2C008ADD57 /* TimeDifference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA1624E8A734008ADD57 /* TimeDifference.swift */; };
+		46F7CA1F24E9DA84008ADD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA1E24E9DA84008ADD57 /* Assets.xcassets */; };
+		46F7CA2624E9DA84008ADD57 /* WatchMementoMori Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 46F7CA2524E9DA84008ADD57 /* WatchMementoMori Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46F7CA2B24E9DA84008ADD57 /* Memento_moriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA2A24E9DA84008ADD57 /* Memento_moriApp.swift */; };
+		46F7CA2D24E9DA84008ADD57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA2C24E9DA84008ADD57 /* ContentView.swift */; };
+		46F7CA2F24E9DA84008ADD57 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA2E24E9DA84008ADD57 /* NotificationController.swift */; };
+		46F7CA3124E9DA84008ADD57 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA3024E9DA84008ADD57 /* NotificationView.swift */; };
+		46F7CA3324E9DA84008ADD57 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F7CA3224E9DA84008ADD57 /* ComplicationController.swift */; };
+		46F7CA3524E9DA86008ADD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA3424E9DA86008ADD57 /* Assets.xcassets */; };
+		46F7CA3824E9DA86008ADD57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA3724E9DA86008ADD57 /* Preview Assets.xcassets */; };
+		46F7CA3D24E9DA87008ADD57 /* WatchMementoMori.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 46F7CA1C24E9DA82008ADD57 /* WatchMementoMori.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		46F7CA4724E9DBBF008ADD57 /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
+		46F7CA4824E9DBBF008ADD57 /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
+		46F7CA4924E9DBBF008ADD57 /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
+		46F7CA4B24E9DBBF008ADD57 /* DaysRemainingVidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */; };
+		46F7CA4C24E9DBBF008ADD57 /* FrontImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC9724DDB972005D3D5E /* FrontImage.swift */; };
+		46F7CA4D24EA7E1B008ADD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4685FC5924DDB795005D3D5E /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +84,20 @@
 			remoteGlobalIDString = 46BF94DB24E46D080048E44E;
 			remoteInfo = MementoMoriWidgetViewExtension;
 		};
+		46F7CA2724E9DA84008ADD57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4685FC5224DDB792005D3D5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46F7CA2424E9DA84008ADD57;
+			remoteInfo = "WatchMementoMori Extension";
+		};
+		46F7CA3B24E9DA87008ADD57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4685FC5224DDB792005D3D5E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46F7CA1B24E9DA81008ADD57;
+			remoteInfo = WatchMementoMori;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,6 +110,28 @@
 				46BF94EA24E46D0A0048E44E /* MementoMoriWidgetViewExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F7CA4124E9DA87008ADD57 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				46F7CA2624E9DA84008ADD57 /* WatchMementoMori Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F7CA4524E9DA87008ADD57 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				46F7CA3D24E9DA87008ADD57 /* WatchMementoMori.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -115,6 +167,19 @@
 		46BF94FA24E5EDB70048E44E /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
 		46F7CA0F24E7EBEB008ADD57 /* Quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quotes.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		46F7CA1624E8A734008ADD57 /* TimeDifference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDifference.swift; sourceTree = "<group>"; };
+		46F7CA1C24E9DA82008ADD57 /* WatchMementoMori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMementoMori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F7CA1E24E9DA84008ADD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46F7CA2024E9DA84008ADD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F7CA2524E9DA84008ADD57 /* WatchMementoMori Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchMementoMori Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46F7CA2A24E9DA84008ADD57 /* Memento_moriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento_moriApp.swift; sourceTree = "<group>"; };
+		46F7CA2C24E9DA84008ADD57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46F7CA2E24E9DA84008ADD57 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		46F7CA3024E9DA84008ADD57 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		46F7CA3224E9DA84008ADD57 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		46F7CA3424E9DA86008ADD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46F7CA3724E9DA86008ADD57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46F7CA3924E9DA86008ADD57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46F7CA3A24E9DA86008ADD57 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46F7CA2224E9DA84008ADD57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -167,6 +239,8 @@
 				4685FC7124DDB795005D3D5E /* Tests iOS */,
 				4685FC7C24DDB795005D3D5E /* Tests macOS */,
 				46BF94DF24E46D080048E44E /* MementoMoriWidgetView */,
+				46F7CA1D24E9DA82008ADD57 /* WatchMementoMori */,
+				46F7CA2924E9DA84008ADD57 /* WatchMementoMori Extension */,
 				46A3D60524E44E6A00CCEF71 /* Frameworks */,
 				4685FC5F24DDB795005D3D5E /* Products */,
 			);
@@ -199,6 +273,8 @@
 				4685FC6E24DDB795005D3D5E /* Tests iOS.xctest */,
 				4685FC7924DDB795005D3D5E /* Tests macOS.xctest */,
 				46BF94DC24E46D080048E44E /* MementoMoriWidgetViewExtension.appex */,
+				46F7CA1C24E9DA82008ADD57 /* WatchMementoMori.app */,
+				46F7CA2524E9DA84008ADD57 /* WatchMementoMori Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,6 +334,39 @@
 			path = MementoMoriWidgetView;
 			sourceTree = "<group>";
 		};
+		46F7CA1D24E9DA82008ADD57 /* WatchMementoMori */ = {
+			isa = PBXGroup;
+			children = (
+				46F7CA1E24E9DA84008ADD57 /* Assets.xcassets */,
+				46F7CA2024E9DA84008ADD57 /* Info.plist */,
+			);
+			path = WatchMementoMori;
+			sourceTree = "<group>";
+		};
+		46F7CA2924E9DA84008ADD57 /* WatchMementoMori Extension */ = {
+			isa = PBXGroup;
+			children = (
+				46F7CA2A24E9DA84008ADD57 /* Memento_moriApp.swift */,
+				46F7CA2C24E9DA84008ADD57 /* ContentView.swift */,
+				46F7CA2E24E9DA84008ADD57 /* NotificationController.swift */,
+				46F7CA3024E9DA84008ADD57 /* NotificationView.swift */,
+				46F7CA3224E9DA84008ADD57 /* ComplicationController.swift */,
+				46F7CA3424E9DA86008ADD57 /* Assets.xcassets */,
+				46F7CA3924E9DA86008ADD57 /* Info.plist */,
+				46F7CA3A24E9DA86008ADD57 /* PushNotificationPayload.apns */,
+				46F7CA3624E9DA86008ADD57 /* Preview Content */,
+			);
+			path = "WatchMementoMori Extension";
+			sourceTree = "<group>";
+		};
+		46F7CA3624E9DA86008ADD57 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46F7CA3724E9DA86008ADD57 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -269,11 +378,13 @@
 				4685FC5B24DDB795005D3D5E /* Frameworks */,
 				4685FC5C24DDB795005D3D5E /* Resources */,
 				46A3D61924E44E6C00CCEF71 /* Embed App Extensions */,
+				46F7CA4524E9DA87008ADD57 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				46BF94E924E46D0A0048E44E /* PBXTargetDependency */,
+				46F7CA3C24E9DA87008ADD57 /* PBXTargetDependency */,
 			);
 			name = "Memento mori (iOS)";
 			productName = "Memento mori (iOS)";
@@ -350,6 +461,40 @@
 			productReference = 46BF94DC24E46D080048E44E /* MementoMoriWidgetViewExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		46F7CA1B24E9DA81008ADD57 /* WatchMementoMori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F7CA4224E9DA87008ADD57 /* Build configuration list for PBXNativeTarget "WatchMementoMori" */;
+			buildPhases = (
+				46F7CA1A24E9DA81008ADD57 /* Resources */,
+				46F7CA4124E9DA87008ADD57 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46F7CA2824E9DA84008ADD57 /* PBXTargetDependency */,
+			);
+			name = WatchMementoMori;
+			productName = WatchMementoMori;
+			productReference = 46F7CA1C24E9DA82008ADD57 /* WatchMementoMori.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		46F7CA2424E9DA84008ADD57 /* WatchMementoMori Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46F7CA3E24E9DA87008ADD57 /* Build configuration list for PBXNativeTarget "WatchMementoMori Extension" */;
+			buildPhases = (
+				46F7CA2124E9DA84008ADD57 /* Sources */,
+				46F7CA2224E9DA84008ADD57 /* Frameworks */,
+				46F7CA2324E9DA84008ADD57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchMementoMori Extension";
+			productName = "WatchMementoMori Extension";
+			productReference = 46F7CA2524E9DA84008ADD57 /* WatchMementoMori Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -376,6 +521,12 @@
 					46BF94DB24E46D080048E44E = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					46F7CA1B24E9DA81008ADD57 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					46F7CA2424E9DA84008ADD57 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 4685FC5524DDB792005D3D5E /* Build configuration list for PBXProject "Memento mori" */;
@@ -396,6 +547,8 @@
 				4685FC6D24DDB795005D3D5E /* Tests iOS */,
 				4685FC7824DDB795005D3D5E /* Tests macOS */,
 				46BF94DB24E46D080048E44E /* MementoMoriWidgetViewExtension */,
+				46F7CA1B24E9DA81008ADD57 /* WatchMementoMori */,
+				46F7CA2424E9DA84008ADD57 /* WatchMementoMori Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -438,6 +591,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				46BF94E424E46D0A0048E44E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F7CA1A24E9DA81008ADD57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F7CA4D24EA7E1B008ADD57 /* Assets.xcassets in Resources */,
+				46F7CA1F24E9DA84008ADD57 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46F7CA2324E9DA84008ADD57 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F7CA3824E9DA86008ADD57 /* Preview Assets.xcassets in Resources */,
+				46F7CA3524E9DA86008ADD57 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +679,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		46F7CA2124E9DA84008ADD57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46F7CA4924E9DBBF008ADD57 /* TimeFormatsView.swift in Sources */,
+				46F7CA4724E9DBBF008ADD57 /* Havamal.swift in Sources */,
+				46F7CA2F24E9DA84008ADD57 /* NotificationController.swift in Sources */,
+				46F7CA2D24E9DA84008ADD57 /* ContentView.swift in Sources */,
+				46F7CA4B24E9DBBF008ADD57 /* DaysRemainingVidgetView.swift in Sources */,
+				46F7CA3324E9DA84008ADD57 /* ComplicationController.swift in Sources */,
+				46F7CA4C24E9DBBF008ADD57 /* FrontImage.swift in Sources */,
+				46F7CA4824E9DBBF008ADD57 /* TimeFormatsModel.swift in Sources */,
+				46F7CA2B24E9DA84008ADD57 /* Memento_moriApp.swift in Sources */,
+				46F7CA3124E9DA84008ADD57 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -525,6 +713,16 @@
 			isa = PBXTargetDependency;
 			target = 46BF94DB24E46D080048E44E /* MementoMoriWidgetViewExtension */;
 			targetProxy = 46BF94E824E46D0A0048E44E /* PBXContainerItemProxy */;
+		};
+		46F7CA2824E9DA84008ADD57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46F7CA2424E9DA84008ADD57 /* WatchMementoMori Extension */;
+			targetProxy = 46F7CA2724E9DA84008ADD57 /* PBXContainerItemProxy */;
+		};
+		46F7CA3C24E9DA87008ADD57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46F7CA1B24E9DA81008ADD57 /* WatchMementoMori */;
+			targetProxy = 46F7CA3B24E9DA87008ADD57 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -877,6 +1075,98 @@
 			};
 			name = Release;
 		};
+		46F7CA3F24E9DA87008ADD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchMementoMori Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SAM97V3SZ2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchMementoMori Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Mementomori.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		46F7CA4024E9DA87008ADD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchMementoMori Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = SAM97V3SZ2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchMementoMori Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Mementomori.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		46F7CA4324E9DA87008ADD57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAM97V3SZ2;
+				IBSC_MODULE = WatchMementoMori_Extension;
+				INFOPLIST_FILE = WatchMementoMori/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Mementomori.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		46F7CA4424E9DA87008ADD57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SAM97V3SZ2;
+				IBSC_MODULE = WatchMementoMori_Extension;
+				INFOPLIST_FILE = WatchMementoMori/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.gmail-isdahl.lars.Mementomori.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -930,6 +1220,24 @@
 			buildConfigurations = (
 				46BF94EC24E46D0A0048E44E /* Debug */,
 				46BF94ED24E46D0A0048E44E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F7CA3E24E9DA87008ADD57 /* Build configuration list for PBXNativeTarget "WatchMementoMori Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F7CA3F24E9DA87008ADD57 /* Debug */,
+				46F7CA4024E9DA87008ADD57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46F7CA4224E9DA87008ADD57 /* Build configuration list for PBXNativeTarget "WatchMementoMori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46F7CA4324E9DA87008ADD57 /* Debug */,
+				46F7CA4424E9DA87008ADD57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

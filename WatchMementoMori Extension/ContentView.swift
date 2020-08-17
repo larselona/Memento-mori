@@ -1,14 +1,18 @@
 //
 //  ContentView.swift
-//  Shared
+//  WatchMementoMori Extension
 //
-//  Created by lars on 07/08/2020.
+//  Created by lars on 16/08/2020.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+//        Text("Hello, World!")
+//            .padding()
+      //  Text("(\(totalDays!) days)")
+        ScrollView {
         VStack {
             FrontImage()
             Spacer()
@@ -22,12 +26,13 @@ struct ContentView: View {
             Havamal()
                 .padding(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
         }
-        
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+        
     }
 }

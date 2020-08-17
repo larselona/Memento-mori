@@ -8,13 +8,12 @@
 // In the end NOT based off: https://stackoverflow.com/questions/24723431/swift-days-between-two-nsdates & https://www.donnywals.com/calculating-the-difference-in-hours-between-two-dates-in-swift/ but rather a Sean Allen tutorial on the calendar function in Swift on YouTube https://www.youtube.com/watch?v=GPtVfSC35T8
 // Also see this great reference: https://en.proft.me/2020/03/4/working-dates-swift/
 // To make the output years,months,weeks, days: https://www.thetopsites.net/article/52710144.shtml
+// This gave me the final key to format the output: https://www.youtube.com/watch?v=odR0YUHte7g
 
 import UIKit
 
-
 let calendar = Calendar.current
 let rightNow = Date()
-
 
 //Create Date from components
 let dateComponents = DateComponents(calendar: calendar, year: 1973, month: 6, day: 16)
@@ -40,11 +39,10 @@ let remainingDaysYears = calendar.dateComponents([.year, .month, .day], from: ri
 let remainingDaysMonths = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).month
 let remainingDaysDays = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).day
 
-//Format as years/days
-
+// I would still like to make this work, as it requires less code. On the other hand the output is less flexible for formatting.
 //let formatter = DateComponentsFormatter()
 //       formatter.unitsStyle = .abbreviated
-//        formatter.allowedUnits = [.year, .month, .day]
+//       formatter.allowedUnits = [.year, .month, .day]
 
 
 

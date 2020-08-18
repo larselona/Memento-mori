@@ -43,6 +43,7 @@ struct ContentView: View {
                           }
             ScrollView {
             TimeFormatsView()
+                .padding()
             }
                 .tabItem {
                //                    Image(systemName: "1.square.fill")

@@ -6,6 +6,7 @@
 //
 
 import ClockKit
+import SwiftUI
 
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
@@ -54,6 +55,102 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getLocalizableSampleTemplate(for complication: CLKComplication, withHandler handler: @escaping (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
-    }
+        
+        // Lars - this is an attempt at adding a complication to the app:
+        // The template code is copied from: https://github.com/zhumingcheng697/GuessTheNumber
+        
+        switch complication.family {
+        
+        // The code for WatchOS 7 is (based on the whale observer app in "Create complications for Apple Watch:
+        
+//        switch (complication.family, complication.identifier) {
+//
+//           case (.graphicRectangular, "SeasonData"):
+//               return CLKComplicationTemplateGraphicRectangularFullView(
+//                   ChartView(
+//                       seriesData: data.last7DaysSightings,
+//                       seriesColor: .turquoise)
+//
+//           case (.graphicCircular, "LogSighting"):
+//               return CLKComplicationTemplateGraphicCircularStackImage(
+//                   line1ImageProvider: spoutFullColorImageProvider,
+//                   line2TextProvider: logSightingTextProvider)
+//
+//           case (.graphicCircular, _):
+//               guard let station = station else { return defaultTemplate(.graphicCircular) }
+//               return CLKComplicationTemplateGraphicCircularView(
+//                   SightingTypeView(station: station))
+//
+//           case (.graphicCorner, _):
+//               guard let station = station else { return defaultTemplate(.graphicCorner) }
+//               return CLKComplicationTemplateGraphicCornerTextImage(
+//                   textProvider: station.timeAndShortLocTextProvider,
+//                   imageProvider: station.whaleActivityFullColorProvider)
+//
+//           case (.graphicExtraLarge, _):
+//               guard let station = station else { return defaultTemplate(.graphicExtraLarge) }
+//               return CLKComplicationTemplateGraphicExtraLargeCircularStackText(
+//                   line1TextProvider: station.timeAndLocationTextProvider,
+//                   line2TextProvider: station.shortLocationTextProvider)
+//
+//           default:
+//               return defaultTemplate(complication.family)
+//           }
+        
+       
+        case .circularSmall:
+            let tmpl = CLKComplicationTemplateCircularSmallSimpleImage()
+            tmpl.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Complication/Circular")!)
+            handler(tmpl)
+            
+        case .extraLarge:
+            let tmpl = CLKComplicationTemplateExtraLargeSimpleImage()
+            tmpl.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Complication/Extra Large")!)
+            handler(tmpl)
+            
+        case .graphicBezel:
+            let circularTmpl = CLKComplicationTemplateGraphicCircularImage()
+            circularTmpl.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "Complication/Graphic Bezel")!, tintedImageProvider: CLKImageProvider(onePieceImage: UIImage(named: "Complication/Graphic Bezel")!))
+            let tmpl = CLKComplicationTemplateGraphicBezelCircularText()
+            tmpl.circularTemplate = circularTmpl
+            tmpl.textProvider = CLKSimpleTextProvider(text: NSLocalizedString("Guess The Number", comment: ""), shortText:  NSLocalizedString("Guess", comment: ""))
+            handler(tmpl)
+            
+        case .graphicCircular:
+            let tmpl = CLKComplicationTemplateGraphicCircularImage()
+            tmpl.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "Complication/Graphic Circular")!, tintedImageProvider: CLKImageProvider(onePieceImage: UIImage(named: "Complication/Graphic Circular")!))
+            handler(tmpl)
+            
+        case .graphicCorner:
+            let tmpl = CLKComplicationTemplateGraphicCornerTextImage()
+            tmpl.imageProvider = CLKFullColorImageProvider(fullColorImage: UIImage(named: "Complication/Graphic Corner")!, tintedImageProvider: CLKImageProvider(onePieceImage: UIImage(named: "Complication/Graphic Corner")!))
+            tmpl.textProvider = CLKSimpleTextProvider(text: NSLocalizedString("Guess The Number", comment: ""), shortText:  NSLocalizedString("Guess", comment: ""))
+            handler(tmpl)
+            
+        case .modularSmall:
+            let tmpl = CLKComplicationTemplateModularSmallSimpleImage()
+            tmpl.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Complication/Modular")!)
+            handler(tmpl)
+            
+        case .utilitarianSmall:
+            let tmpl = CLKComplicationTemplateUtilitarianSmallSquare()
+            tmpl.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Complication/Utilitarian")!)
+            handler(tmpl)
+            
+        case .utilitarianSmallFlat:
+            let tmpl = CLKComplicationTemplateUtilitarianSmallFlat()
+            tmpl.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Utilitatian Flat")!)
+            tmpl.textProvider = CLKSimpleTextProvider(text: NSLocalizedString("Guess The Number", comment: ""), shortText:  NSLocalizedString("Guess", comment: ""))
+            handler(tmpl)
+            
+        case .utilitarianLarge:
+            let tmpl = CLKComplicationTemplateUtilitarianLargeFlat()
+            tmpl.imageProvider = CLKImageProvider(onePieceImage: UIImage(named: "Utilitatian Flat")!)
+            tmpl.textProvider = CLKSimpleTextProvider(text: NSLocalizedString("Guess The Number", comment: ""), shortText:  NSLocalizedString("Guess", comment: ""))
+            handler(tmpl)
+            
+        default:
+            handler(nil)
+        }
+}
 }

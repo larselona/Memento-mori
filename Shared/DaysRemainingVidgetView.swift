@@ -20,7 +20,6 @@ struct DaysRemainingWidgetView: View {
                     
                     Text("\(totalDaysYears!)y \(totalDaysMonths!)m \(totalDaysDays!)d")
                         
-                    
                 }
                 
                 Text("(\(totalDays!) days)")

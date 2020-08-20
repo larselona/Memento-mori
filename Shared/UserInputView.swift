@@ -16,10 +16,14 @@ struct UserInputView: View {
         
         VStack(alignment: .leading) {
             Text("User input")
+                
                 .font(.title)
-            Form {
+   // Form {
+                
             DatePicker(selection: $birthDay, displayedComponents: .date, label: {
                         Text("Date of birth") })
+                .frame(maxWidth: .infinity, minHeight:0, maxHeight: 40)
+                
             
                 HStack {
                 Text("Name:")
@@ -32,16 +36,18 @@ struct UserInputView: View {
                     
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-            }
-                    
+       
+   //}
+           
+        
+                CountryPicker()
+            
 //                    Text("Your name is: \(userName)")
-                     
-            
-            
-                
          
             Spacer()
-            
+          
+            Text("Hello, \(userName). Your age is:")
+     
         }
         .padding()
     }

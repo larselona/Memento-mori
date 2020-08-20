@@ -71,6 +71,7 @@ struct TimeFormatsView: View {
                 VStack {
                     Text("\(livedDaysYears!)y \(livedDaysMonths!)m \(livedDaysDays!)d")
                         .font(.title3)
+                        .strikethrough(true, color: Color.red)
                     Text("(\(livedDays!) days)")
                 }
             }
@@ -87,7 +88,7 @@ struct TimeFormatsView: View {
                     Text("(\(remainingDays!) days)")
                 }
             }
-            Spacer()
+           
         }
         #endif
     }

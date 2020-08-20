@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		462ECB5B24EEB0A0009EB6C8 /* SwiftCountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */; };
+		462ECB5C24EEB0A0009EB6C8 /* SwiftCountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */; };
+		462ECB5D24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */; };
+		462ECB5E24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */; };
+		462ECB5F24EEB0A0009EB6C8 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */; };
+		462ECB6024EEB0A0009EB6C8 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */; };
 		4685FC7324DDB795005D3D5E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC7224DDB795005D3D5E /* Tests_iOS.swift */; };
 		4685FC7E24DDB795005D3D5E /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC7D24DDB795005D3D5E /* Tests_macOS.swift */; };
 		4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC5724DDB792005D3D5E /* Memento_moriApp.swift */; };
@@ -136,6 +142,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SwiftCountryPicker.bundle; sourceTree = "<group>"; };
+		462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryPicker.swift; sourceTree = "<group>"; };
+		462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		4685FC5724DDB792005D3D5E /* Memento_moriApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memento_moriApp.swift; sourceTree = "<group>"; };
 		4685FC5824DDB792005D3D5E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4685FC5924DDB795005D3D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -259,6 +268,9 @@
 				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
 				46BF94FA24E5EDB70048E44E /* UserInputView.swift */,
 				46F7CA0F24E7EBEB008ADD57 /* Quotes.json */,
+				462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */,
+				462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */,
+				462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -558,6 +570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F7CA1024E7EBEB008ADD57 /* Quotes.json in Resources */,
+				462ECB5B24EEB0A0009EB6C8 /* SwiftCountryPicker.bundle in Resources */,
 				4685FC8424DDB795005D3D5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46F7CA1124E7EBEB008ADD57 /* Quotes.json in Resources */,
+				462ECB5C24EEB0A0009EB6C8 /* SwiftCountryPicker.bundle in Resources */,
 				4685FC8524DDB795005D3D5E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -621,10 +635,12 @@
 			files = (
 				46A3D5FE24E03CD400CCEF71 /* Havamal.swift in Sources */,
 				46BF94FB24E5EDB70048E44E /* UserInputView.swift in Sources */,
+				462ECB5F24EEB0A0009EB6C8 /* CountryModel.swift in Sources */,
 				4685FCC224DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
 				46BF94E724E46D0A0048E44E /* MementoMoriWidgetView.intentdefinition in Sources */,
 				4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
+				462ECB5D24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
 				4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
 				4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */,
@@ -635,7 +651,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				462ECB5E24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */,
 				46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */,
+				462ECB6024EEB0A0009EB6C8 /* CountryModel.swift in Sources */,
 				4685FCC324DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
 				4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */,

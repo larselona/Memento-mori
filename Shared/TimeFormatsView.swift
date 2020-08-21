@@ -60,6 +60,7 @@ struct TimeFormatsView: View {
                         .font(.title3)
                     Text("(\(totalDays!) days)")
                 }
+                
             }
             
             Spacer()

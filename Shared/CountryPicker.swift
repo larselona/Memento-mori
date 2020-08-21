@@ -32,7 +32,7 @@ struct CountryPicker: View {
             }
             else{
                 HStack {
-                    selectedCountryValue?.flag?.renderingMode(.original).cornerRadius(5.0).padding(5)
+                    selectedCountryValue?.flag?.renderingMode(.original).cornerRadius(2.0).padding(5)
 
                     Text(selectedCountryValue?.name ?? "").font(.headline)
                     Spacer()
@@ -73,7 +73,7 @@ struct CountryPicker: View {
     
     private func pickerRow(_ country:Country) -> some View {
         return HStack {
-            country.flag?.resizable().scaledToFit().cornerRadius(5.0)
+            country.flag?.resizable().scaledToFit().cornerRadius(1.0)
             Text(country.name ?? "")
             Spacer()
             Text("(\(country.phoneCode ?? ""))")
@@ -102,7 +102,7 @@ struct CountryPicker: View {
                     
                     self.pickerFooterButton().padding([.leading, .trailing], 20)
                     
-                }   .background( RoundedRectangle(cornerRadius: 15)
+                }   .background( RoundedRectangle(cornerRadius: 5)
                     .foregroundColor(Color.white)
                     .shadow( color: Color.gray.opacity(0.35), radius: 1, x: 0, y: 0))
             }

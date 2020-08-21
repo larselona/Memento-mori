@@ -268,8 +268,8 @@
 				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
 				46BF94FA24E5EDB70048E44E /* UserInputView.swift */,
 				46F7CA0F24E7EBEB008ADD57 /* Quotes.json */,
-				462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */,
 				462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */,
+				462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */,
 				462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */,
 			);
 			path = Shared;

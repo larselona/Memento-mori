@@ -13,13 +13,11 @@ struct UserInputView: View {
     @State private var birthDay = Date()
     
     var body: some View {
-        
-        VStack(alignment: .leading) {
-            Text("User input")
-                
-                .font(.title)
-   // Form {
-                
+        NavigationView{
+     //   VStack(alignment: .leading) {
+            
+   Form {
+    Section {
             DatePicker(selection: $birthDay, displayedComponents: .date, label: {
                         Text("Date of birth") })
                 .frame(maxWidth: .infinity, minHeight:0, maxHeight: 40)
@@ -36,7 +34,7 @@ struct UserInputView: View {
                     
                 }
                 .textFieldStyle(RoundedBorderTextFieldStyle())
-       
+    }
    //}
            
         
@@ -48,8 +46,11 @@ struct UserInputView: View {
           
             Text("Hello, \(userName). Your age is:")
      
-        }
-        .padding()
+     }
+     //   .padding()
+   .navigationBarTitle(Text("User details"), displayMode: .inline )
+    }
+        
     }
 }
 

@@ -18,20 +18,20 @@ struct DaysRemainingWidgetView: View {
                     Text("☥")
                         .font(.title2)
                     
-                    Text("\(totalDaysYears!)y \(totalDaysMonths!)m \(totalDaysDays!)d")
-                        
+                    Text("\(totalYMD)")
                 }
+                Text("\(totalDays!)")
                 
-                Text("(\(totalDays!) days)")
             }
             Spacer()
+            
             VStack {
                 HStack {
                     
                     Image(systemName: "heart.slash")
                         .foregroundColor(.red)
                     
-                    Text("\(livedDaysYears!)y \(livedDaysMonths!)m \(livedDaysDays!)d")
+                    Text("\(livedYMD)")
                        
                 }
                 
@@ -39,12 +39,13 @@ struct DaysRemainingWidgetView: View {
                     
             }
             Spacer()
+            
             VStack {
                 HStack {
                     
                     Image(systemName: "bolt.heart")
                         .foregroundColor(.green)
-                    Text("\(remainingDaysYears!)y \(remainingDaysMonths!)m \(remainingDaysDays!)d")
+                    Text("\(remainingYMD)d")
                 }
                 Text("(\(remainingDays!))")
                     

@@ -22,27 +22,54 @@ let composedDate = calendar.date(from: dateComponents)
 let endComponents = DateComponents(calendar: calendar, year: 2060, month: 10, day: 15)
 let endDate = calendar.date(from: endComponents)
 
-
-//Days since our original date (composed date)
+// This is my first attempt, which is highly customizable because the year, month, day components are returned separately
+////Days since our original date (composed date)
 let totalDays = calendar.dateComponents([.day], from: composedDate!, to: endDate!).day
-let totalDaysYears = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).year
-let totalDaysMonths = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).month
-let totalDaysDays = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).day
+//let totalDaysYears = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).year
+//let totalDaysMonths = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).month
+//let totalDaysDays = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).day
+
+// This is the correct way of doing it:
+var totalYMD: String {
+    let formatter = DateComponentsFormatter()
+    formatter.unitsStyle = .abbreviated
+    formatter.allowedUnits = [.year, .month, .day]
+    let lifespan = formatter.string(from: composedDate!, to: endDate!)!
+    return (lifespan) // prints: 4 years, 5 months, 9 days
+}
 
 let livedDays = calendar.dateComponents([.day], from: composedDate!, to: rightNow).day
 let livedDaysYears = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).year
 let livedDaysMonths = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).month
 let livedDaysDays = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).day
 
+var livedYMD: String {
+    let formatter = DateComponentsFormatter()
+    formatter.unitsStyle = .abbreviated
+    formatter.allowedUnits = [.year, .month, .day]
+    let lifespan = formatter.string(from: composedDate!, to: rightNow)!
+    return (lifespan) // prints: 4 years, 5 months, 9 days
+}
+
 let remainingDays = calendar.dateComponents([.day], from: rightNow, to: endDate!).day
-let remainingDaysYears = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).year
-let remainingDaysMonths = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).month
-let remainingDaysDays = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).day
+//let remainingDaysYears = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).year
+//let remainingDaysMonths = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).month
+//let remainingDaysDays = calendar.dateComponents([.year, .month, .day], from: rightNow, to: endDate!).day
+
+var remainingYMD: String {
+    let formatter = DateComponentsFormatter()
+    formatter.unitsStyle = .abbreviated
+    formatter.allowedUnits = [.year, .month, .day]
+    let lifespan = formatter.string(from: rightNow, to: endDate!)!
+    return (lifespan) // prints: 4 years, 5 months, 9 days
+}
 
 // I would still like to make this work, as it requires less code. On the other hand the output is less flexible for formatting.
 //let formatter = DateComponentsFormatter()
 //       formatter.unitsStyle = .abbreviated
 //       formatter.allowedUnits = [.year, .month, .day]
+
+
 
 
 

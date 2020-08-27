@@ -10,19 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack {
-                FrontImage()
-                
-                Spacer()
-
-                TimeFormatsView()
-                    .padding(.top)
-                
-                Spacer()
-                
-                Havamal()
-                    .padding(/*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
-            }
+           HomeView()
             .navigationBarTitle(Text("Memento mori"), displayMode: .inline)
         }
     }

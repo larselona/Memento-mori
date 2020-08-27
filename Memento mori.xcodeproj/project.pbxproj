@@ -31,6 +31,10 @@
 		4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
 		46A3D5FE24E03CD400CCEF71 /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
 		46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
+		46B22C0224F8003E00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
+		46B22C0624F8092E00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
+		46B22C0724F8093C00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
+		46B22C0824F8093D00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
 		46B5127724EC83540022B7F9 /* GaugeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B5127624EC83540022B7F9 /* GaugeSample.swift */; };
 		46BF94DD24E46D080048E44E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A3D60624E44E6A00CCEF71 /* WidgetKit.framework */; };
 		46BF94DE24E46D080048E44E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A3D60824E44E6A00CCEF71 /* SwiftUI.framework */; };
@@ -170,6 +174,7 @@
 		46A3D60624E44E6A00CCEF71 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		46A3D60824E44E6A00CCEF71 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		46A5B9EA24F54BB70035DBD3 /* WatchMementoMori Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WatchMementoMori Extension.entitlements"; sourceTree = "<group>"; };
+		46B22C0124F8003E00487461 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		46B5127624EC83540022B7F9 /* GaugeSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GaugeSample.swift; sourceTree = "<group>"; };
 		46BF94DC24E46D080048E44E /* MementoMoriWidgetViewExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MementoMoriWidgetViewExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		46BF94E024E46D080048E44E /* MementoMoriWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoMoriWidgetView.swift; sourceTree = "<group>"; };
@@ -265,6 +270,7 @@
 				46BF94F424E4A2C80048E44E /* Time formatted as ymwd.playground */,
 				4685FC5724DDB792005D3D5E /* Memento_moriApp.swift */,
 				4685FC5824DDB792005D3D5E /* ContentView.swift */,
+				46B22C0124F8003E00487461 /* HomeView.swift */,
 				4685FC9724DDB972005D3D5E /* FrontImage.swift */,
 				4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */,
 				46A3D5FD24E03CD400CCEF71 /* Havamal.swift */,
@@ -652,6 +658,7 @@
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
 				462ECB5D24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
+				46B22C0224F8003E00487461 /* HomeView.swift in Sources */,
 				4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
 				4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
@@ -664,6 +671,7 @@
 				462ECB5E24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */,
 				46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */,
 				462ECB6024EEB0A0009EB6C8 /* CountryModel.swift in Sources */,
+				46B22C0624F8092E00487461 /* HomeView.swift in Sources */,
 				4685FCC324DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
 				4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */,
@@ -693,6 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B22C0724F8093C00487461 /* HomeView.swift in Sources */,
 				46BF94F224E46D200048E44E /* TimeFormatsView.swift in Sources */,
 				46BF94E624E46D0A0048E44E /* MementoMoriWidgetView.intentdefinition in Sources */,
 				46BF94EE24E46D200048E44E /* Havamal.swift in Sources */,
@@ -717,6 +726,7 @@
 				46B5127724EC83540022B7F9 /* GaugeSample.swift in Sources */,
 				46F7CA4C24E9DBBF008ADD57 /* FrontImage.swift in Sources */,
 				46F7CA4824E9DBBF008ADD57 /* TimeFormatsModel.swift in Sources */,
+				46B22C0824F8093D00487461 /* HomeView.swift in Sources */,
 				46F7CA2B24E9DA84008ADD57 /* Memento_moriApp.swift in Sources */,
 				46F7CA3124E9DA84008ADD57 /* NotificationView.swift in Sources */,
 			);

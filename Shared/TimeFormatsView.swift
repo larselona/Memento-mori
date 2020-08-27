@@ -9,93 +9,54 @@ import SwiftUI
 
 struct TimeFormatsView: View {
     var body: some View {
-        #if os (iOS)
+       // #if os (iOS)
         VStack {
             
             VStack {
                 VStack {
                     Text("☥")
-                        .font(.title2)
+                        .font(.title3)
+                    #if os (iOS)
                     Text("Total number of days")
+                    #endif
                 }
                 Text("\(totalYMD)")
-                    .font(.title2)
-                // writing each component separately
-//                Text("\(totalDaysYears!)y \(totalDaysMonths!)m \(totalDaysDays!)d")
-//                    .font(.title2)
+                    .font(.title3)
+                
                Text("(\(totalDays!) days)")
             }
             Spacer()
+            
             VStack {
                 VStack {
                     Image(systemName: "heart.slash")
                         .foregroundColor(.red)
+                    #if os (iOS)
                     Text("Lived number of days")
+                    #endif
                 }
                 Text("\(livedYMD)")
-                    .font(.title2)
+                    .font(.title3)
                 Text("(\(livedDays!) days)")
             }
             Spacer()
+            
             VStack {
                 VStack {
                     Image(systemName: "bolt.heart")
                         .foregroundColor(.green)
+                    #if os(iOS)
                     Text("Remaining number of days")
+                    #endif
                 }
                 Text("\(remainingYMD)")
-                    .font(.title2)
+                    .font(.title3)
                 Text("(\(remainingDays!) days)")
                 
                 
             }
             Spacer()
         }
-        #elseif os(watchOS)
-        VStack {
-            
-            HStack {
-                Text("☥")
-                    .font(.title2)
-                
-                VStack {
-//                    Text("\(totalDaysYears!)y \(totalDaysMonths!)m \(totalDaysDays!)d")
-//                        .font(.title3)
-//                    Text("(\(totalDays!) days)")
-                    Text("\(totalYMD)")
-                }
-                Text("\(totalDays!) days")
-            }
-            
-            Spacer()
-            
-            HStack {
-                Image(systemName: "heart.slash")
-                    .foregroundColor(.red)
-                
-                VStack {
-                    Text("\(livedYMD)")
-                        .font(.title3)
-                        .strikethrough(true, color: Color.red)
-                    Text("(\(livedDays!) days)")
-                }
-            }
-            
-            Spacer()
-            
-            HStack {
-                Image(systemName: "bolt.heart")
-                    .foregroundColor(.green)
-                
-                VStack {
-                    Text("\(remainingYMD)d")
-                        .font(.title3)
-                    Text("(\(remainingDays!) days)")
-                }
-            }
-           
-        }
-        #endif
     }
 }
 

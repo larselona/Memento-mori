@@ -6,28 +6,24 @@
 //  Copyright © 2020 JDA. All rights reserved.
 //
 
-import Foundation
+
 import SwiftUI
 
 struct Country {
-    
     var code: String?
     var name: String?
-    var phoneCode: String?
     var flag: Image? {
         guard let code = self.code else { return nil }
         guard let bundlePath = Bundle.main.path(forResource: "SwiftCountryPicker", ofType: "bundle") else { return nil }
         guard let bundle = Bundle(path: bundlePath)  else { return nil }
-        guard let imagePath = bundle.path(forResource: "Images/\(code.uppercased())", ofType: "png") else { return nil }
+        guard let imagePath = bundle.path(forResource: "Images/\(code.lowercased())", ofType: "png") else { return nil }
         guard let uiImage = UIImage(contentsOfFile: imagePath) else { return nil }
         return Image.init(uiImage: uiImage)
     }
     
-    init(code: String?, name: String?, phoneCode: String?) {
+    init(code: String?, name: String?) {
         self.code = code
         self.name = name
-        self.phoneCode = phoneCode
-        
     }
     
     // Populates the metadata from the included json file resource
@@ -47,11 +43,11 @@ struct Country {
                             
                             guard let countryObj = jsonObject as? NSDictionary else {  return countries }
                             
-                            guard let code = countryObj["code"] as? String, let phoneCode = countryObj["dial_code"] as? String, let name = countryObj["name"] as? String else {
+                            guard let code = countryObj["code"] as? String, let name = countryObj["name"] as? String else {
                                 return countries
                             }
                             
-                            let country = Country(code: code, name: name, phoneCode: phoneCode)
+                            let country = Country(code: code, name: name)
                             countries.append(country)
                         }
                     }
@@ -62,7 +58,7 @@ struct Country {
                 
             }
         } else {
-            print("SwiftCountryPicker Bundle not able to locate.")
+            print("Unable to locate SwiftCountryPicker bundle.")
         }
         
         return countries

@@ -16,45 +16,44 @@ struct CountryPicker: View {
     
     var countries = Country.countryNamesByCode()
     
+    // MARK: - THE "DISPLAY COUNTRY OR PICK A COUNTRY" BUTTON
     private func pickerFieldButton() -> some View {
-        
         return  Button(action: {
             self.isPickerSelected = !self.isPickerSelected
-            
         }) {
-            
             if selectedCountryValue == nil {
                 Text("Select Country")
-//                    .font(.headline)
-//                   .background(Color.white)
-//                    .foregroundColor(Color.gray)
-                   .frame(minWidth: 100, maxWidth: .infinity, minHeight:0)
+                    //                    .font(.headline)
+                    //                   .background(Color.white)
+                    //                    .foregroundColor(Color.gray)
+                    .frame(minWidth: 100, maxWidth: .infinity, minHeight:50)
             }
             else{
                 HStack {
-                    selectedCountryValue?.flag?.renderingMode(.original).cornerRadius(2.0).padding(5)
-
-                    Text(selectedCountryValue?.name ?? "").font(.headline)
-                    Spacer()
-                    Text("(\(selectedCountryValue?.phoneCode ?? ""))")
-                    }.frame(minWidth: 100, maxWidth: .infinity, minHeight: 50).padding(15)
-
+                    selectedCountryValue?.flag?
+                        .renderingMode(.original)
+                        .resizable()
+                        .frame(maxWidth: 40, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .cornerRadius(0.0)
+                    Text(selectedCountryValue?.name ?? "Select from the list")
+                        // .font(.headline)
+                }.frame(minWidth: 100, maxWidth: .infinity, minHeight: 50).padding(15)
             }
-            
         }
-        // The formatting of the button
         
-      .background( RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(Color.white)
-       .shadow( color: Color.gray.opacity(0.35), radius: 1, x: 0, y: 0)
-      )
+        // MARK: - The formatting of the above button
+        .background( RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Color.white)
+                        .shadow(color: Color.gray.opacity(0.35), radius: 1, x: 0, y: 0)
+        )
     }
-      
+    
+    // MARK: - The SAVE button
     private func pickerFooterButton() -> some  View {
         return HStack {
             Button(action: {
-                self.isPickerSelected = !self.isPickerSelected
-                self.selectedCountryValue = self.countries[self.selectedCountry]
+                isPickerSelected = !isPickerSelected
+                selectedCountryValue = countries[selectedCountry]
             }) {
                 HStack {
                     Text("Save")
@@ -63,51 +62,62 @@ struct CountryPicker: View {
                         .background(Color.green)
                         .font(Font.subheadline)
                         .cornerRadius(5.0)
-                    
                 }
                 
             }.padding(15)
-            
         }
     }
-    
+    // MARK: - The rows displaying the countries
     private func pickerRow(_ country:Country) -> some View {
         return HStack {
-            country.flag?.resizable().scaledToFit().cornerRadius(1.0)
+            country.flag?
+                .resizable()
+                .frame(maxWidth: 40, maxHeight: 30, alignment: .center)
+                .cornerRadius(0.0)
+            
             Text(country.name ?? "")
-            Spacer()
-            Text("(\(country.phoneCode ?? ""))")
-        }.padding(10)
+            //Spacer()
+            // Text("(\(country.phoneCode ?? ""))")
+        }.padding(5)
     }
     
+    // MARK: - The picker view. conforms to view
     private func pickerView() -> some View {
         return
-            Picker("", selection: $selectedCountry) {
-                ForEach(0 ..< countries.count) {
-                    self.pickerRow(self.countries[$0])
+            // this was the solution; wrapping the picker in a NavigationView and a Form
+            NavigationView{
+                Form{
+                    
+                    Picker("", selection: $selectedCountry) {
+                        ForEach(0 ..< countries.count) {
+                            pickerRow(countries[$0])
+                        }
+                    }
+                    
+                    // .pickerStyle(MenuPickerStyle())
+                    .labelsHidden()
+                    
                 }
-        }.labelsHidden()
-
+            }
     }
-    
     var body: some View {
+        
         VStack {
-            
-            self.pickerFieldButton()
+            pickerFieldButton()
             
             if isPickerSelected == true {
                 VStack{
+                    pickerView()
+                       // .padding([.leading, .trailing], 20)
                     
-                    self.pickerView().padding([.leading, .trailing], 20)
-                    
-                    self.pickerFooterButton().padding([.leading, .trailing], 20)
+                    pickerFooterButton()
+                        //.padding([.leading, .trailing], 20)
                     
                 }   .background( RoundedRectangle(cornerRadius: 5)
-                    .foregroundColor(Color.white)
-                    .shadow( color: Color.gray.opacity(0.35), radius: 1, x: 0, y: 0))
+                                    .foregroundColor(Color.white)
+                                    .shadow( color: Color.gray.opacity(0.35), radius: 1, x: 0, y: 0))
             }
-            
-        }//.padding(30)
+        }
     }
 }
 
@@ -116,7 +126,6 @@ struct CountryPicker_Previews: PreviewProvider {
         CountryPicker()
     }
 }
-
 
 
 

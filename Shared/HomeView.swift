@@ -33,7 +33,9 @@ struct HomeView: View {
                         Image(systemName: "hourglass")
                     }
                 
-                Color.purple
+                VStack {
+               UserInputView()
+                }
                     
                     // to identify current index:
                     .tag(1)

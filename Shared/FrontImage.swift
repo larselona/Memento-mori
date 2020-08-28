@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FrontImage: View {
     var body: some View {
+        // ! use the geometry reader here
         Image("nature4")
             .resizable()
             .aspectRatio(contentMode: .fit)

@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		462ECB5B24EEB0A0009EB6C8 /* SwiftCountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */; };
 		462ECB5C24EEB0A0009EB6C8 /* SwiftCountryPicker.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */; };
-		462ECB5D24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */; };
-		462ECB5E24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */; };
 		462ECB5F24EEB0A0009EB6C8 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */; };
 		462ECB6024EEB0A0009EB6C8 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */; };
 		4685FC7324DDB795005D3D5E /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FC7224DDB795005D3D5E /* Tests_iOS.swift */; };
@@ -35,6 +33,8 @@
 		46B22C0624F8092E00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
 		46B22C0724F8093C00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
 		46B22C0824F8093D00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
+		46B22C0924F80CD400487461 /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF94FA24E5EDB70048E44E /* UserInputView.swift */; };
+		46B22C0E24F80D4D00487461 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */; };
 		46B5127724EC83540022B7F9 /* GaugeSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B5127624EC83540022B7F9 /* GaugeSample.swift */; };
 		46BF94DD24E46D080048E44E /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A3D60624E44E6A00CCEF71 /* WidgetKit.framework */; };
 		46BF94DE24E46D080048E44E /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46A3D60824E44E6A00CCEF71 /* SwiftUI.framework */; };
@@ -277,9 +277,9 @@
 				4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */,
 				4685FC5924DDB795005D3D5E /* Assets.xcassets */,
 				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
-				46BF94FA24E5EDB70048E44E /* UserInputView.swift */,
 				46F7CA0F24E7EBEB008ADD57 /* Quotes.json */,
 				46FCC2BB24F45CEC009AFD4D /* ShortQuotes.json */,
+				46BF94FA24E5EDB70048E44E /* UserInputView.swift */,
 				462ECB5924EEB09F009EB6C8 /* CountryPicker.swift */,
 				462ECB5A24EEB0A0009EB6C8 /* CountryModel.swift */,
 				462ECB5824EEB09E009EB6C8 /* SwiftCountryPicker.bundle */,
@@ -656,7 +656,6 @@
 				46BF94E724E46D0A0048E44E /* MementoMoriWidgetView.intentdefinition in Sources */,
 				4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
-				462ECB5D24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
 				46B22C0224F8003E00487461 /* HomeView.swift in Sources */,
 				4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
@@ -668,7 +667,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				462ECB5E24EEB0A0009EB6C8 /* CountryPicker.swift in Sources */,
 				46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */,
 				462ECB6024EEB0A0009EB6C8 /* CountryModel.swift in Sources */,
 				46B22C0624F8092E00487461 /* HomeView.swift in Sources */,
@@ -703,10 +701,12 @@
 			files = (
 				46B22C0724F8093C00487461 /* HomeView.swift in Sources */,
 				46BF94F224E46D200048E44E /* TimeFormatsView.swift in Sources */,
+				46B22C0E24F80D4D00487461 /* CountryModel.swift in Sources */,
 				46BF94E624E46D0A0048E44E /* MementoMoriWidgetView.intentdefinition in Sources */,
 				46BF94EE24E46D200048E44E /* Havamal.swift in Sources */,
 				46BF94F124E46D200048E44E /* ContentView.swift in Sources */,
 				46BF94F024E46D200048E44E /* DaysRemainingVidgetView.swift in Sources */,
+				46B22C0924F80CD400487461 /* UserInputView.swift in Sources */,
 				46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */,
 				46BF94E124E46D080048E44E /* MementoMoriWidgetView.swift in Sources */,
 				46BF94EF24E46D200048E44E /* FrontImage.swift in Sources */,

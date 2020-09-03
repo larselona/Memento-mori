@@ -39,9 +39,9 @@ var totalYMD: String {
 }
 
 let livedDays = calendar.dateComponents([.day], from: composedDate!, to: rightNow).day
-let livedDaysYears = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).year
-let livedDaysMonths = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).month
-let livedDaysDays = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).day
+//let livedDaysYears = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).year
+//let livedDaysMonths = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).month
+//let livedDaysDays = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: rightNow).day
 
 var livedYMD: String {
     let formatter = DateComponentsFormatter()

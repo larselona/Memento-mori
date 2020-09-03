@@ -50,6 +50,16 @@
 		46BF94F224E46D200048E44E /* TimeFormatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */; };
 		46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */; };
 		46BF94FB24E5EDB70048E44E /* UserInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BF94FA24E5EDB70048E44E /* UserInputView.swift */; };
+		46C3C49E24FFDE3500C0EDCF /* MomoQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C49D24FFDE3500C0EDCF /* MomoQuote.swift */; };
+		46C3C49F24FFDE3500C0EDCF /* MomoQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C49D24FFDE3500C0EDCF /* MomoQuote.swift */; };
+		46C3C4A024FFE00800C0EDCF /* MomoQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C49D24FFDE3500C0EDCF /* MomoQuote.swift */; };
+		46C3C4A224FFE1D600C0EDCF /* BeppoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A124FFE1D600C0EDCF /* BeppoImage.swift */; };
+		46C3C4A324FFE1D600C0EDCF /* BeppoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A124FFE1D600C0EDCF /* BeppoImage.swift */; };
+		46C3C4A424FFE21C00C0EDCF /* BeppoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A124FFE1D600C0EDCF /* BeppoImage.swift */; };
+		46C3C4A624FFE3DC00C0EDCF /* EpicurusPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A524FFE3DC00C0EDCF /* EpicurusPoints.swift */; };
+		46C3C4A724FFE3DC00C0EDCF /* EpicurusPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A524FFE3DC00C0EDCF /* EpicurusPoints.swift */; };
+		46C3C4A824FFE4D400C0EDCF /* EpicurusPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A524FFE3DC00C0EDCF /* EpicurusPoints.swift */; };
+		46C3C4A924FFE4D700C0EDCF /* EpicurusPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46C3C4A524FFE3DC00C0EDCF /* EpicurusPoints.swift */; };
 		46F7CA1024E7EBEB008ADD57 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA0F24E7EBEB008ADD57 /* Quotes.json */; };
 		46F7CA1124E7EBEB008ADD57 /* Quotes.json in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA0F24E7EBEB008ADD57 /* Quotes.json */; };
 		46F7CA1F24E9DA84008ADD57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46F7CA1E24E9DA84008ADD57 /* Assets.xcassets */; };
@@ -183,6 +193,9 @@
 		46BF94E524E46D0A0048E44E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46BF94F424E4A2C80048E44E /* Time formatted as ymwd.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Time formatted as ymwd.playground"; path = "../../../../../Library/Autosave Information/Time formatted as ymwd.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		46BF94FA24E5EDB70048E44E /* UserInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInputView.swift; sourceTree = "<group>"; };
+		46C3C49D24FFDE3500C0EDCF /* MomoQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MomoQuote.swift; sourceTree = "<group>"; };
+		46C3C4A124FFE1D600C0EDCF /* BeppoImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeppoImage.swift; sourceTree = "<group>"; };
+		46C3C4A524FFE3DC00C0EDCF /* EpicurusPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpicurusPoints.swift; sourceTree = "<group>"; };
 		46F7CA0F24E7EBEB008ADD57 /* Quotes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quotes.json; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.json; };
 		46F7CA1C24E9DA82008ADD57 /* WatchMementoMori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchMementoMori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		46F7CA1E24E9DA84008ADD57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -274,7 +287,10 @@
 				4685FC9724DDB972005D3D5E /* FrontImage.swift */,
 				4685FCC124DEE6C6005D3D5E /* TimeFormatsView.swift */,
 				46A3D5FD24E03CD400CCEF71 /* Havamal.swift */,
+				46C3C49D24FFDE3500C0EDCF /* MomoQuote.swift */,
+				46C3C4A124FFE1D600C0EDCF /* BeppoImage.swift */,
 				4685FC9424DDB7FC005D3D5E /* DaysRemainingVidgetView.swift */,
+				46C3C4A524FFE3DC00C0EDCF /* EpicurusPoints.swift */,
 				4685FC5924DDB795005D3D5E /* Assets.xcassets */,
 				4685FCCA24DEE9D1005D3D5E /* TimeFormatsModel.swift */,
 				46F7CA0F24E7EBEB008ADD57 /* Quotes.json */,
@@ -657,8 +673,11 @@
 				4685FCCB24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8224DDB795005D3D5E /* ContentView.swift in Sources */,
 				4685FC8024DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
+				46C3C49E24FFDE3500C0EDCF /* MomoQuote.swift in Sources */,
+				46C3C4A224FFE1D600C0EDCF /* BeppoImage.swift in Sources */,
 				46B22C0224F8003E00487461 /* HomeView.swift in Sources */,
 				4685FC9524DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
+				46C3C4A624FFE3DC00C0EDCF /* EpicurusPoints.swift in Sources */,
 				4685FC9824DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,13 +686,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46C3C4A724FFE3DC00C0EDCF /* EpicurusPoints.swift in Sources */,
 				46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */,
 				462ECB6024EEB0A0009EB6C8 /* CountryModel.swift in Sources */,
 				46B22C0624F8092E00487461 /* HomeView.swift in Sources */,
 				4685FCC324DEE6C6005D3D5E /* TimeFormatsView.swift in Sources */,
 				4685FCCC24DEE9D1005D3D5E /* TimeFormatsModel.swift in Sources */,
 				4685FC8324DDB795005D3D5E /* ContentView.swift in Sources */,
+				46C3C49F24FFDE3500C0EDCF /* MomoQuote.swift in Sources */,
 				4685FC8124DDB795005D3D5E /* Memento_moriApp.swift in Sources */,
+				46C3C4A324FFE1D600C0EDCF /* BeppoImage.swift in Sources */,
 				4685FC9624DDB7FC005D3D5E /* DaysRemainingVidgetView.swift in Sources */,
 				4685FC9924DDB972005D3D5E /* FrontImage.swift in Sources */,
 			);
@@ -707,8 +729,11 @@
 				46BF94F124E46D200048E44E /* ContentView.swift in Sources */,
 				46BF94F024E46D200048E44E /* DaysRemainingVidgetView.swift in Sources */,
 				46B22C0924F80CD400487461 /* UserInputView.swift in Sources */,
+				46C3C4A024FFE00800C0EDCF /* MomoQuote.swift in Sources */,
+				46C3C4A424FFE21C00C0EDCF /* BeppoImage.swift in Sources */,
 				46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */,
 				46BF94E124E46D080048E44E /* MementoMoriWidgetView.swift in Sources */,
+				46C3C4A824FFE4D400C0EDCF /* EpicurusPoints.swift in Sources */,
 				46BF94EF24E46D200048E44E /* FrontImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -728,6 +753,7 @@
 				46F7CA4824E9DBBF008ADD57 /* TimeFormatsModel.swift in Sources */,
 				46B22C0824F8093D00487461 /* HomeView.swift in Sources */,
 				46F7CA2B24E9DA84008ADD57 /* Memento_moriApp.swift in Sources */,
+				46C3C4A924FFE4D700C0EDCF /* EpicurusPoints.swift in Sources */,
 				46F7CA3124E9DA84008ADD57 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

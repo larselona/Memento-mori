@@ -20,7 +20,9 @@ struct DaysRemainingWidgetView: View {
                     
                     Text("\(totalYMD)")
                 }
-                Text("\(totalDays!)")
+                Text("(\(totalDays!) days)")
+                    .font(.footnote)
+                    
                 
             }
             Spacer()
@@ -36,7 +38,7 @@ struct DaysRemainingWidgetView: View {
                 }
                 
                 Text("(\(livedDays!) days)")
-                    
+                    .font(.footnote)
             }
             Spacer()
             
@@ -45,10 +47,10 @@ struct DaysRemainingWidgetView: View {
                     
                     Image(systemName: "bolt.heart")
                         .foregroundColor(.green)
-                    Text("\(remainingYMD)d")
+                    Text("\(remainingYMD)")
                 }
-                Text("(\(remainingDays!))")
-                    
+                Text("(\(remainingDays!) days)")
+                    .font(.footnote)
             }
             Spacer()
         }

@@ -16,6 +16,8 @@ struct TimeFormatsView: View {
                 VStack {
                     Text("☥")
                         .font(.title3)
+                        .padding(1)
+               
                     #if os (iOS)
                     Text("Total number of days")
                     #endif
@@ -31,6 +33,7 @@ struct TimeFormatsView: View {
                 VStack {
                     Image(systemName: "heart.slash")
                         .foregroundColor(.red)
+                        .padding(1)
                     #if os (iOS)
                     Text("Lived number of days")
                     #endif
@@ -45,6 +48,7 @@ struct TimeFormatsView: View {
                 VStack {
                     Image(systemName: "bolt.heart")
                         .foregroundColor(.green)
+                        .padding(1)
                     #if os(iOS)
                     Text("Remaining number of days")
                     #endif

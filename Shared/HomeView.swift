@@ -43,18 +43,24 @@ struct HomeView: View {
                     .tabItem {
                         Image(systemName: "house.fill")
                     }
-                Color.orange
+                VStack {
+               MomoQuote()
+                }
                     
                     .tag(2)
                     .tabItem {
                         Image(systemName: "suit.heart.fill")
                     }
-                Color.black
+                VStack {
+               BeppoImage()
+                }
                     .tag(3)
                     .tabItem {
                         Image(systemName: "gear")
                     }
-                Color.yellow
+                VStack {
+                    EpicurusPoints()
+                }
                     .tag(4)
                     .tabItem {
                         Image(systemName: "person.fill")
@@ -92,7 +98,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("Love")
+                        Text("User")
                         Image(systemName: "suit.heart.fill")
                         
                     }
@@ -106,7 +112,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("Settings")
+                        Text("Quote")
                         Image(systemName: "gear")
                         
                     }
@@ -120,7 +126,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("Account")
+                        Text("Beppo")
                         Image(systemName: "person.fill")
                         
                     }
@@ -134,7 +140,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("Last")
+                        Text("Epicurus")
                         Image(systemName: "alarm")
                         
                     }

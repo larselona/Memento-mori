@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-
 struct UserInputView: View {
     @State private var userName = ""
     @State private var birthDay = Date()
-    @State private var selectedCountry = -1
+    // the initial value has been set to Norways number in the array
+    @State private var selectedCountry = 162
     
     var countries = Country.countryNamesByCode()
     
@@ -32,11 +32,7 @@ struct UserInputView: View {
         #if os(iOS)
         NavigationView{
             Form {
-                Section {
-                    DatePicker(selection: $birthDay, displayedComponents: .date, label: {
-                                Text("Date of birth") })
-                        .frame(maxWidth: .infinity, minHeight:0, maxHeight: 40)
-                    
+                Section(header: Text("Name and birthday")) {
                     HStack {
                         Text("Name:")
                         
@@ -46,17 +42,23 @@ struct UserInputView: View {
                             print("Username onCommit")
                         }
                     }
+                    
+                    DatePicker(selection: $birthDay, displayedComponents: .date, label: {
+                                Text("Date of birth:") })
+                        .frame(maxWidth: .infinity, minHeight:30, maxHeight: 40)
                 }
                 
                 // MARK: - Country picker
-                Section {
+                Section(header: Text("Country of origin")) {
                     Picker("", selection: $selectedCountry) {
                         ForEach(0 ..< countries.count) {
                             pickerRow(countries[$0])
                         }
                     }
-                    
                 }
+                Text("Your name is: \(userName), \n You were born \(birthDay), \n and you are from \(selectedCountry)")
+                    .font(.footnote)
+                    .lineLimit(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
             }
             .navigationBarTitle(Text("User details"), displayMode: .inline )
         }

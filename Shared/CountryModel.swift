@@ -50,7 +50,10 @@ struct Country {
                             let country = Country(code: code, name: name)
                             countries.append(country)
                         }
+                     
+
                     }
+                    
                 }
                 catch {
                   print("Parsing country json failed.")
@@ -62,6 +65,7 @@ struct Country {
         }
         
         return countries
+        
     }
   
 }

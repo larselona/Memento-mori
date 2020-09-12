@@ -59,6 +59,7 @@ struct UserInputView: View {
                 Text("Your name is: \(userName), \n You were born \(birthDay), \n and you are from \(selectedCountry)")
                     .font(.footnote)
                     .lineLimit(/*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                
             }
             .navigationBarTitle(Text("User details"), displayMode: .inline )
         }

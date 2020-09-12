@@ -29,6 +29,8 @@ let totalDays = calendar.dateComponents([.day], from: composedDate!, to: endDate
 //let totalDaysMonths = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).month
 //let totalDaysDays = calendar.dateComponents([.year, .month, .day], from: composedDate!, to: endDate!).day
 
+// An improved way of doing this is in the DatesTest file. It needs to be implemented here!
+
 // This is the correct way of doing it:
 var totalYMD: String {
     let formatter = DateComponentsFormatter()

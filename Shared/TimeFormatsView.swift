@@ -43,7 +43,7 @@ struct TimeFormatsView: View {
                 Text("(\(livedDays!) days)")
             }
             Spacer()
-            
+        
             VStack {
                 VStack {
                     Image(systemName: "bolt.heart")

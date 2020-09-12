@@ -19,15 +19,35 @@ struct EpicurusPoints: View {
 
     Philosophy can be a useful meditation on what it is to live well. Thinking about one’s own death can focus one’s attention on what it is that makes life so valuable.
     """
+
     
     var body: some View {
-        Text("\(points)")
-            .padding()
+        ZStack {
+            Image("calmWater")
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .ignoresSafeArea()
+                .blendMode(.darken)
+              //  .opacity(0.8)
+            
+            VStack{
+                Text("\(points)")
+                    .font(.body)
+                    .foregroundColor(Color("BackgroundBlue"))
+                
+                
+            }
+            .padding([.leading, .trailing], 60)
+           
+        }
+        
     }
 }
 
 struct EpicurusPoints_Previews: PreviewProvider {
     static var previews: some View {
         EpicurusPoints()
+       
+            
     }
 }

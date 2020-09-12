@@ -34,11 +34,22 @@ struct HomeView: View {
                     }
                 
                 VStack {
+                ColumnLayout()
+                }
+                // to identify current index:
+                .tag(1)
+                // custom tab icon:
+                .tabItem {
+                    Image(systemName: "house.fill")
+                }
+                
+                   
+                    VStack {
                UserInputView()
                 }
                     
                     // to identify current index:
-                    .tag(1)
+                    .tag(2)
                     // custom tab icon:
                     .tabItem {
                         Image(systemName: "house.fill")
@@ -47,21 +58,21 @@ struct HomeView: View {
                MomoQuote()
                 }
                     
-                    .tag(2)
+                    .tag(3)
                     .tabItem {
                         Image(systemName: "suit.heart.fill")
                     }
                 VStack {
                BeppoImage()
                 }
-                    .tag(3)
+                    .tag(4)
                     .tabItem {
                         Image(systemName: "gear")
                     }
                 VStack {
                     EpicurusPoints()
                 }
-                    .tag(4)
+                    .tag(5)
                     .tabItem {
                         Image(systemName: "person.fill")
                     }
@@ -98,7 +109,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("User")
+                        Text("Column")
                         Image(systemName: "suit.heart.fill")
                         
                     }
@@ -112,7 +123,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("Quote")
+                        Text("User")
                         Image(systemName: "gear")
                         
                     }
@@ -126,7 +137,7 @@ struct HomeView: View {
                     
                 }, label: {
                     HStack {
-                        Text("Beppo")
+                        Text("Quote")
                         Image(systemName: "person.fill")
                         
                     }
@@ -136,6 +147,20 @@ struct HomeView: View {
                     withAnimation{
                         //changing index
                         index = 4
+                    }
+                    
+                }, label: {
+                    HStack {
+                        Text("Beppo")
+                        Image(systemName: "person.fill")
+                        
+                    }
+                })
+                
+                Button(action: {
+                    withAnimation{
+                        //changing index
+                        index = 5
                     }
                     
                 }, label: {

@@ -36,9 +36,7 @@ struct Country {
             if let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonPath)) {
               
                 do {
-                    
                     if let jsonObjects = try JSONSerialization.jsonObject(with: jsonData, options: JSONSerialization.ReadingOptions.allowFragments) as? NSArray {
-                        
                         for jsonObject in jsonObjects {
                             
                             guard let countryObj = jsonObject as? NSDictionary else {  return countries }
@@ -46,26 +44,18 @@ struct Country {
                             guard let code = countryObj["code"] as? String, let name = countryObj["name"] as? String else {
                                 return countries
                             }
-                            
                             let country = Country(code: code, name: name)
                             countries.append(country)
                         }
-                     
-
                     }
-                    
                 }
                 catch {
                   print("Parsing country json failed.")
                 }
-                
             }
         } else {
             print("Unable to locate SwiftCountryPicker bundle.")
         }
-        
         return countries
-        
     }
-  
 }

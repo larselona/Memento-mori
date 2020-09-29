@@ -40,11 +40,11 @@ struct Home : View {
 struct GridView : View {
     
     var lifespan_Data : [CalculatedLife]
-    var columns = Array(repeating: GridItem(.flexible(), spacing: 20), count: 2)
+    var columns = Array(repeating: GridItem(.flexible(), spacing: 16), count: 2)
     
     var body: some View{
         
-        LazyVGrid(columns: columns,spacing: 30){
+        LazyVGrid(columns: columns,spacing: 16){
             
             ForEach(lifespan_Data){lifespan in
                 
@@ -88,11 +88,11 @@ struct GridView : View {
                         .renderingMode(.template)
                         .foregroundColor(.white)
                         .padding()
-                    .background(Color.white.opacity(0.12))
-                    .clipShape(Circle())
+//                    .background(Color.white.opacity(0.12))
+//                    .clipShape(Circle())
                 }
-                Color("CardMiddleBlue").edgesIgnoringSafeArea(.all)
-                    .cornerRadius(20)
+//                Color("CardMiddleBlue").edgesIgnoringSafeArea(.all)
+//                    .cornerRadius(20)
             }
         }
         .padding(.horizontal)
@@ -115,12 +115,20 @@ struct CalculatedLife : Identifiable {
 
 var life_Data = [
     
-    CalculatedLife(id: 0, title: "Total lifespan", image: "heart", data: ("\(totalYMD)"), suggest: ("\(totalDays!)\ndays")),
+    CalculatedLife(id: 0, title: "Birth date", image: "running", data: ("\(birthDate)"), suggest: ("-")),
     
-    CalculatedLife(id: 1, title: "Days lived", image: "sleep", data: ("\(livedYMD)"), suggest: ("\(livedDays!)\ndays")),
+    CalculatedLife(id: 1, title: "Total lifespan", image: "heart", data: ("\(totalYMD)"), suggest: ("\(totalDays!)\ndays")),
     
-    CalculatedLife(id: 2, title: "Days remaing", image: "energy", data: ("\(remainingYMD)"), suggest: ("\(remainingDays!)\ndays")),
+    CalculatedLife(id: 2, title: "Todays date", image: "steps", data: ("\(todaysDate)"), suggest: ("\(remainingDays!)\ndays")),
     
+    CalculatedLife(id: 3, title: "Days lived", image: "sleep", data: ("\(livedYMD)"), suggest: ("\(livedDays!)\ndays")),
     
+    CalculatedLife(id: 4, title: "End date", image: "cycle", data: ("\(lastDate)"), suggest: ("\(remainingDays!)\ndays")),
+    
+    CalculatedLife(id: 5, title: "Days remaing", image: "energy", data: ("\(remainingYMD)"), suggest: ("\(remainingDays!)\ndays")),
+    
+
+    
+
 ]
 

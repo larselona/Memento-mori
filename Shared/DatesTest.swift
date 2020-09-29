@@ -19,7 +19,7 @@ func todaysDateYMD(todaysDate: Date) -> String {
     let formatter = DateFormatter()
     formatter.dateStyle = .medium
     formatter.timeStyle = .none
-    formatter.locale = Locale(identifier: "no_NO")
+    formatter.locale = Locale(identifier: "en_EN")
     let today = formatter.string(from: todaysDate)
     return (today)
 }
@@ -28,11 +28,15 @@ var totalTime = dateYMD(date1: composedDate!, date2: endDate!)
 var spentTime = dateYMD(date1: composedDate!, date2: rightNow)
 var remainingTime = dateYMD(date1: rightNow, date2: endDate!)
 var todaysDate = todaysDateYMD(todaysDate: Date())
+var lastDate = todaysDateYMD(todaysDate: endDate!)
+var birthDate = todaysDateYMD(todaysDate: composedDate! )
 
 struct DatesTest: View {
     var body: some View {
         VStack {
+            Text("\(birthDate)")
             Text("\(todaysDate)")
+            Text("\(lastDate)")
             Text("\(totalTime)")
             Text("\(spentTime)")
             Text("\(remainingTime)")

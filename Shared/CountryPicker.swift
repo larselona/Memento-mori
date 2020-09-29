@@ -36,7 +36,7 @@ struct CountryPicker: View {
                         .frame(maxWidth: 40, maxHeight: 30, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .cornerRadius(0.0)
                     Text(selectedCountryValue?.name ?? "Select from the list")
-                        // .font(.headline)
+                    // .font(.headline)
                 }.frame(minWidth: 100, maxWidth: .infinity, minHeight: 50).padding(15)
             }
         }
@@ -63,8 +63,8 @@ struct CountryPicker: View {
                         .font(Font.subheadline)
                         .cornerRadius(5.0)
                 }
-                
-            }.padding(15)
+            }
+            .padding(15)
         }
     }
     // MARK: - The rows displaying the countries
@@ -108,10 +108,10 @@ struct CountryPicker: View {
             if isPickerSelected == true {
                 VStack{
                     pickerView()
-                       // .padding([.leading, .trailing], 20)
+                    // .padding([.leading, .trailing], 20)
                     
                     pickerFooterButton()
-                        //.padding([.leading, .trailing], 20)
+                    //.padding([.leading, .trailing], 20)
                     
                 }   .background( RoundedRectangle(cornerRadius: 5)
                                     .foregroundColor(Color.white)

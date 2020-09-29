@@ -37,6 +37,8 @@
 		46A3D5FF24E03CD400CCEF71 /* Havamal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A3D5FD24E03CD400CCEF71 /* Havamal.swift */; };
 		46A73A5E250AD4560063034D /* DatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A73A5D250AD4560063034D /* DatesTest.swift */; };
 		46A73A5F250AD4560063034D /* DatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A73A5D250AD4560063034D /* DatesTest.swift */; };
+		46A73A65250E216D0063034D /* DatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A73A5D250AD4560063034D /* DatesTest.swift */; };
+		46A73A66250E21700063034D /* DatesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A73A5D250AD4560063034D /* DatesTest.swift */; };
 		46B22C0224F8003E00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
 		46B22C0624F8092E00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
 		46B22C0724F8093C00487461 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46B22C0124F8003E00487461 /* HomeView.swift */; };
@@ -556,7 +558,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1200;
-				LastUpgradeCheck = 1200;
+				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					4685FC5D24DDB795005D3D5E = {
 						CreatedOnToolsVersion = 12.0;
@@ -752,6 +754,7 @@
 				468B0B9825018FB20059B243 /* ColumnLayout.swift in Sources */,
 				46C3C4A024FFE00800C0EDCF /* MomoQuote.swift in Sources */,
 				46C3C4A424FFE21C00C0EDCF /* BeppoImage.swift in Sources */,
+				46A73A65250E216D0063034D /* DatesTest.swift in Sources */,
 				46BF94F324E46D200048E44E /* TimeFormatsModel.swift in Sources */,
 				46BF94E124E46D080048E44E /* MementoMoriWidgetView.swift in Sources */,
 				46C3C4A824FFE4D400C0EDCF /* EpicurusPoints.swift in Sources */,
@@ -776,6 +779,7 @@
 				46B22C0824F8093D00487461 /* HomeView.swift in Sources */,
 				46F7CA2B24E9DA84008ADD57 /* Memento_moriApp.swift in Sources */,
 				46C3C4A924FFE4D700C0EDCF /* EpicurusPoints.swift in Sources */,
+				46A73A66250E21700063034D /* DatesTest.swift in Sources */,
 				46F7CA3124E9DA84008ADD57 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -979,6 +983,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SAM97V3SZ2;
@@ -1003,6 +1008,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = SAM97V3SZ2;

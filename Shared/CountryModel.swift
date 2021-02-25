@@ -1,9 +1,7 @@
 //
 //  CountryModel.swift
-//  JDA Country Picker
 //
-//  Created by Jeevan on 04/07/20.
-//  Copyright © 2020 JDA. All rights reserved.
+//  Created by lars on 08/08/2020.
 //
 
 
